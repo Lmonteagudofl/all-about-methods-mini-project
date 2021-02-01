@@ -11,7 +11,8 @@ class Main {
     int year = scan.nextInt();
     // asking the user the current year 
 
-    System.out.println(gradYear(age, year));
+
+    System.out.println("You will graduate in "+ gradYear(age, year));
   }
 
   static int gradYear(int currentAge, int currentYear) {
