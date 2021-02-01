@@ -12,6 +12,7 @@ class Main {
     // asking the user the current year
     System.out.println("What school are you graduating from?");
     String school = scan.next();
+    // asking what school the user is graduating from 
 
     System.out.println("You will graduate in " + gradYear(age, year));
     // prints out the year you will graduate
