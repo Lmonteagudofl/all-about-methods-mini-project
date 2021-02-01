@@ -9,7 +9,7 @@ class Main {
     // asking the user their age 
     System.out.println("what is the current year");
     int year = scan.nextInt();
-    
+    // asking the user the current year 
 
     System.out.println(gradYear(age, year));
   }
