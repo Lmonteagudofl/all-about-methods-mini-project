@@ -10,7 +10,8 @@ class Main {
     System.out.println("what is the current year");
     int year = scan.nextInt();
     // asking the user the current year 
-
+    System.out.println("What school are you graduating from?");
+    String school = scan.next();
 
     System.out.println("You will graduate in "+ gradYear(age, year));
   }
@@ -18,5 +19,9 @@ class Main {
   static int gradYear(int currentAge, int currentYear) {
     int yearsLeft = 18 - currentAge;
     return yearsLeft + currentYear;
+  }
+  static String school(String name){
+    String school = "";
+
   }
 }
