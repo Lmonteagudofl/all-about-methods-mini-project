@@ -23,8 +23,8 @@ class Main {
     System.out.println("How many credits do you have?");
     int credits = scan.nextInt();
 
+    System.out.println(gpaQualification(gpa,credits));
 
-    
   }
 
   static int gradYear(int currentAge, int currentYear) {
@@ -39,7 +39,7 @@ class Main {
   static String gpaQualification(double gpa, int credits) {
 
     if (gpa >= 2.0 && credits >= 30 ) {
-      return "You qualify for the college of your choice";
+      return "You qualify for the college of your choice!! Yay";
     } else {
       return "You dont qualify for your college of choice";
     }
