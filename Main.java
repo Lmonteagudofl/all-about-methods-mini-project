@@ -24,6 +24,7 @@ class Main {
     int credits = scan.nextInt();
 
     System.out.println(gpaQualification(gpa,credits));
+    // calls qualifing method 
 
   }
 
@@ -39,9 +40,11 @@ class Main {
   static String gpaQualification(double gpa, int credits) {
 
     if (gpa >= 2.0 && credits >= 30 ) {
+      // if inputs follow these it will print out the if 
       return "You qualify for the college of your choice!! Yay";
     } else {
       return "You dont qualify for your college of choice";
+      // if the input dosnt follow the rules then it prints out else 
     }
   }
 }
