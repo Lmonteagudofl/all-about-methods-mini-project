@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import javax.lang.model.util.ElementScanner6;
+
 class Main {
   public static void main(String[] args) {
     Scanner scan = new Scanner(System.in);
@@ -12,10 +14,12 @@ class Main {
     // asking the user the current year
     System.out.println("What school are you graduating from?");
     String school = scan.next();
-    // asking what school the user is graduating from 
-
+    // asking what school the user is graduating from
     System.out.println("You will graduate in " + gradYear(age, year));
     // prints out the year you will graduate
+    System.out.println("what is our GPA?");
+    int gpa = scan.nextInt();
+    // asking the user what their gpa is 
   }
 
   static int gradYear(int currentAge, int currentYear) {
@@ -25,5 +29,14 @@ class Main {
 
   static String school(String name) {
     return "hello" + name;
+  }
+
+  static boolean gpaQualification(double gpa, int credits) {
+
+    if (gpa >= 2.0 && credits >= 30 ) {
+      return true;
+    } else {
+      return false;
+    }
   }
 }
