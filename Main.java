@@ -18,8 +18,13 @@ class Main {
     System.out.println("You will graduate in " + gradYear(age, year));
     // prints out the year you will graduate
     System.out.println("what is our GPA?");
-    int gpa = scan.nextInt();
+    double gpa = scan.nextDouble();
     // asking the user what their gpa is 
+    System.out.println("How many credits do you have?");
+    int credits = scan.nextInt();
+
+
+    
   }
 
   static int gradYear(int currentAge, int currentYear) {
@@ -31,12 +36,12 @@ class Main {
     return "hello" + name;
   }
 
-  static boolean gpaQualification(double gpa, int credits) {
+  static String gpaQualification(double gpa, int credits) {
 
     if (gpa >= 2.0 && credits >= 30 ) {
-      return true;
+      return "You qualify for the college of your choice";
     } else {
-      return false;
+      return "You dont qualify for your college of choice";
     }
   }
 }
